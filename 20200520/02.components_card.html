@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>卡片</title>
+    <style>
+        .content {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 5px dotted #aaa;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h4>卡片是Bootstrap 很好使用的容器資訊，跟欄位系統非常合拍，可以放置圖片、標題、段落、按鈕、清單等，
+            主要資訊內容放在 .card-body 裡面
+        </h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>
+            卡片的縮放
+        </h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <!-- 確定 -->
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/300/?random=1">
+                    <!-- card-body 不是flex，d-flex flex-colum -->
+                    <div class="card-body d-flex flex-colum">
+                        <h5 class="card-title">Card title</h5>
+                        <!-- flex-fill、flex-grow-1 mb-auto 進行空間分配 -->
+                        <p class="card-text mb-auto">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/300/?random=1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300/?random=1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="card-body ">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>7.圖像覆蓋</h4>
+        <div class="row">
+            <div class="col-sm6">
+                <div class="card bg-dark text-white">
+                    <img src="https://picsum.photos/1920/1080/?random=1" class="card-img" alt="..."
+                        style="object-fit:cover;">
+                    <div class="card-body card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm6">
+                <div class="card text-white">
+                    <img src="https://picsum.photos/1920/1080/?random=1" class="card-img" alt="..."
+                        style="object-fit:cover;">
+                    <div class="card-body card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>卡片排版</h1>
+        <h4>卡片群組</h4>
+        <div class="card-group">
+            <div class="card">
+                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>column-count</h4>
+        <div class="content">
+            <div>
+                Saepe cum, quaerat ipsa odit accusamus sed id voluptatum dolorum exercitationem, consectetur nulla enim
+                ullam provident architecto. Ipsa, provident officiis! Tempore iste repudiandae neque voluptatibus modi
+                facere error harum voluptatum!
+                Numquam vel pariatur possimus doloremque cum optio voluptas in alias laboriosam quasi molestias, aliquid
+                sapiente iusto rem ab, quis reiciendis iste sit asperiores earum sed! Quasi eum necessitatibus
+                blanditiis libero!
+                Doloremque perspiciatis vero accusamus voluptatum, sequi animi possimus! Fugiat placeat pariatur,
+                corporis harum mollitia dolore dolor, nulla iste laborum similique culpa! Iste, voluptatibus quo velit
+                vero sequi natus beatae harum.
+                Necessitatibus, nam ducimus, perspiciatis eum ex mollitia excepturi eaque reiciendis accusamus totam qui
+                nulla, cupiditate dolor maiores facilis sit ipsa repudiandae itaque culpa veritatis? Quas blanditiis
+                quaerat eaque dolores consequatur.
+                Officiis soluta labore iste modi at accusamus officia quaerat quibusdam! Commodi, possimus voluptate
+                ratione repellat explicabo fugiat maiores sequi tempore ducimus veritatis assumenda distinctio
+                voluptatibus debitis fuga quis, iusto nostrum!
+                Delectus nesciunt mollitia laborum provident placeat enim vel odit reprehenderit neque dolorem id,
+                perspiciatis repellendus? Eos molestias nam culpa reprehenderit modi aliquid autem quisquam, similique
+                nesciunt! Debitis adipisci reiciendis illum.
+                Cum, tempora optio sint, nesciunt velit natus iure est in perspiciatis fugiat magnam! Commodi,
+                voluptatum tempora quibusdam illum laboriosam magni tenetur voluptates quisquam, asperiores eligendi
+            </div>
+            <div>
+                Saepe cum, quaerat ipsa odit accusamus sed id voluptatum dolorum exercitationem, consectetur nulla enim
+                ullam provident architecto. Ipsa, provident officiis! Tempore iste repudiandae neque voluptatibus modi
+                facere error harum voluptatum!
+                Numquam vel pariatur possimus doloremque cum optio voluptas in alias laboriosam quasi molestias, aliquid
+                sapiente iusto rem ab, quis reiciendis iste sit asperiores earum sed! Quasi eum necessitatibus
+                blanditiis libero!
+                Officiis soluta labore iste modi at accusamus officia quaerat quibusdam! Commodi, possimus voluptate
+                Cum, tempora optio sint, nesciunt velit natus iure est in perspiciatis fugiat magnam! Commodi,
+                voluptatum tempora quibusdam illum laboriosam magni tenetur voluptates quisquam, asperiores eligendi
+            </div>
+            <div>
+                Saepe cum, quaerat ipsa odit accusamus sed id voluptatum dolorum exercitationem, consectetur nulla enim
+                ullam provident architecto. Ipsa, provident officiis! Tempore iste repudiandae neque voluptatibus modi
+                facere error harum voluptatum!
+                Numquam vel pariatur possimus doloremque cum optio voluptas in alias laboriosam quasi molestias, aliquid
+                sapiente iusto rem ab, quis reiciendis iste sit asperiores earum sed! Quasi eum necessitatibus
+                blanditiis libero!
+                Doloremque perspiciatis vero accusamus voluptatum, sequi animi possimus! Fugiat placeat pariatur,
+                corporis harum mollitia dolore dolor, nulla iste laborum similique culpa! Iste, voluptatibus quo velit
+                vero sequi natus beatae harum.
+                Necessitatibus, nam ducimus, perspiciatis eum ex mollitia excepturi eaque reiciendis accusamus totam qui
+                nulla, cupiditate dolor maiores facilis sit ipsa repudiandae itaque culpa veritatis? Quas blanditiis
+                quaerat eaque dolores consequatur.
+                Officiis soluta labore iste modi at accusamus officia quaerat quibusdam! Commodi, possimus voluptate
+                ratione repellat explicabo fugiat maiores sequi tempore ducimus veritatis assumenda distinctio
+                voluptatibus debitis fuga quis, iusto nostrum!
+                Delectus nesciunt mollitia laborum provident placeat enim vel odit reprehenderit neque dolorem id,
+                perspiciatis repellendus? Eos molestias nam culpa reprehenderit modi aliquid autem quisquam, similique
+                nesciunt! Debitis adipisci reiciendis illum.
+                Cum, tempora optio sint, nesciunt velit natus iure est in perspiciatis fugiat magnam! Commodi,
+                voluptatum tempora quibusdam illum laboriosam magni tenetur voluptates quisquam, asperiores eligendi
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        let count = 0;
+        $('#badge1').text(count);
+        $('#btn1').on('click', function () {
+            $('#badge1').text(++count)
+        })
+    </script>
+</body>
+
+</html>
