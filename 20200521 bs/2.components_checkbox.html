@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title></title>
+    <style>
+        /* 畫圈圈形狀 */
+        #checkbox input+label::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.2rem;
+            height: 1.2rem;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        /* 藥丸子形狀 */
+        #checkbox input+label::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2.5rem;
+            height: 1.2rem;
+            background-color: #777;
+            border-radius: 0.5rem;
+        }
+
+        #checkbox input:checked+label::after {
+            left: 1.3rem;
+        }
+
+        #checkbox input+label>span {
+            position: absolute;
+            top: 0;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="checkbox">
+        <input id="check" type="checkbox">
+        <label for="check1"><span>chack me</span></label>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
