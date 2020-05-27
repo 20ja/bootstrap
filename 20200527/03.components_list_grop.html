@@ -14,6 +14,7 @@
 
 <body>
     <div class="container">
+        <h4>列表群組 (List group)</h4>
         <div class="row">
             <div class="col">
                 <ul class="list-group">
@@ -22,9 +23,205 @@
                     <li class="list-group-item">Morbi leo risus</li>
                     <li class="list-group-item">Porta ac consectetur ac</li>
                     <li class="list-group-item"><a href="#" class="btn disabled">Vestibulum at eros</a></li>
-                  </ul>
+                </ul>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <h4>連結和按鈕</h4>
+        <div class="row">
+            <div class="col-6">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Cras justo odio
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                        aria-disabled="true">Vestibulum at eros</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active">
+                        Cras justo odio
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis
+                        in</button>
+                    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur
+                        ac</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at
+                        eros</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h4>緊貼</h4>
+                <p>加入 .list-group-flush 來移除部分邊框及圓角，用來產生邊緣貼齊的列表群組，這可用在一個容器內(如：卡片)。</p>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h4>情境 Class</h4>
+                <p>使用情境式 Class 來設計具有狀態被境和顏色的列表項目。</p>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                            <li class="list-group-item list-group-item-secondary">A simple secondary list group item
+                            </li>
+                            <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                            <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                            <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h4>情境 Class</h4>
+                <p>情境式 Class 也可以使用 .list-group-item-action。請注意，在上述範例中，不存在 hover 樣式。另外還支持 .active 狀態
+                    ；應用它來指示在情境列表組合項目上的啟用狀態。</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">Dapibus ac facilisis
+                                in</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple
+                                primary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A
+                                simple secondary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple
+                                success list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple
+                                danger list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple
+                                warning list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple
+                                info list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple
+                                light list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple
+                                dark list group item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h4>帶標籤</h4>
+                <p>在某些 通用類別 的幫助下，向任何列表項目添加標籤以顯示未讀計數、活動等。</p>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Cras justo odio
+                                <span class="badge badge-primary badge-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dapibus ac facilisis in
+                                <span class="badge badge-primary badge-pill">2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Morbi leo risus
+                                <span class="badge badge-primary badge-pill">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>自定義內容</h4>
+            <p>在 flexbox 通用類別的幫助下，添加幾乎任何的 HTML 或內容、連結等，都能加入到一個項目內。</p>
+            <div class="row">
+                <div class="col">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>JavaScript 行為</h4>
+            <p>使用列表群組的 JavaScript 插件 - 單獨或通過編譯的 bootstrap.js 檔擴展我們的列表群組，以創建可選擇的內容表單。</p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home" role="tab" aria-controls="home">Home</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            而且輔助台北戀愛，屬於降價順利學院如今另外行政很少眼淚床上，判斷不行身影一時內地靜靜實施博士第二，頓時神話學院總統保留出版社商城防治讓你瘋狂，保證監管宅宅不是此處機制自然信箱把你難得那麼確保對外，用於實施真正不用增加特性某個有權歌詞印刷用於，星座中文，一。
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            隊員看來評論及時科技通常鎖定你知道交流主板，足夠有限責任公司多次經營很有，並非新年執法現代化，忘記市政府我想成果案例男女並且明確信箱飲食謝謝，概念回去每個一邊加速電池吃了心理增長施工什麼是，地面思路官方全國就會中學這次經典帳號共享，詳細評價搭配阿摩斯，問。
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
