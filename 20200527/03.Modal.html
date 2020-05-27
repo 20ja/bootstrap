@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <h4>互動視窗 (Modal)</h4>
+    <div class="row">
+      <div class="col">
+        <!-- 需要button 或 a 的 data-toggle="modal" 觸發 modal 視窗
+            使用 button 時 data-target 的值須為 modal 主體id
+            使用 a 時 沒有data-target 必須使用 href="#id"
+        -->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+
+        <!-- Modal 主體
+        data-backdrop="static" 可鎖定背景 點即背景不會關閉 modal
+       .fade 淡入淡出轉場效果 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                嗨嗨嗨~
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="animate__animated animate__bounce">動畫</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script>
+    $('.modal').on('show.bs.modal', function () {
+      $('.modal .modal-dialog').attr('class', 'modal-dialog modal-dialog-centered modal-lg animate__animated animate__bounce');
+    });
+    $('.modal').on('hide.bs.modal', function () {
+      $('.modal .modal-dialog').attr('class', 'modal-dialog modal-dialog-centered modal-lg animate__animated animate__backOutUp');
+    });
+
+  </script>
+</body>
+
+</html>
