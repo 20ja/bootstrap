@@ -125,6 +125,49 @@ background-color: var(--coffee1);
   }
 }
 
+#section01,#section02,
+#section03,#section04,
+#section05,#section06
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+/* section02 菜單餐點 */
+
+#section02{
+  background: var(--coffee4);
+}
+#section02 .container h1{
+  text-align: center;
+  padding: var(--s4);
+  color: var(--coffee1);
+}
+#section02>.container>.row {
+  padding: var(--s2);
+}
+#section02 .list-group {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+#section02 .list-group .nav-link {
+  color: var(--coffee2);
+  padding: 0.5rem;
+}
+#section02 .card {
+  border: 5px double var(--coffee5) !important;
+  transition: 0.3s;
+}
+#section02 .card:hover {
+  transform: translateY(-1rem);
+}
+
+
+
+
+
 /* 裝置斷點控制區------------------------- */
 /* 575px以下 */
 @media (max-width: 575px){
