@@ -15,7 +15,9 @@
   <!-- Magnific Popup -->
   <link rel="stylesheet" href="../css/magnific-popup.css">
   <link rel="stylesheet" href="./css/magnific-popup-Single.css">
-
+  <!-- animate.css -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css'/>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'/>
 
   <title>泰山咖啡莊園-Coding的好地方</title>
   <meta name="description" content="泰山咖啡莊園，提供完善的前端、後端技術課程，由淺至進階學習，擁有寬敞明亮的學習空間及雙螢幕教學設備，
@@ -953,7 +955,40 @@
       </div>
     </div>
   </section>
-
+<!-- footer 頁尾 -->
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <div class="col-auto">
+        <i class="fas fa-map-marked-alt mx-2"></i>
+        <span class="align-middle">
+          新北市泰山區貴子里致遠新村 55 之 1 號
+        </span>
+      </div>
+      <div class="col-auto">
+        <i class="fas fa-clock mr-2"></i>
+        <span class="align-middle">
+          營業時間：週一至週五 08:10~16:35，六、日 08:10~16:35
+        </span>
+      </div>
+      <div class="col-auto">
+        <i class="fas fa-phone"></i>
+        <span class="align-middle">
+          電話：（02）2901-8274
+        </span>
+      </div>
+      <div class="col-auto">
+        <ul class="list-unstyled d-flex flex-lg-row">
+          <li class="mr-2"><a href="https://zh-tw.facebook.com/" data-toggle="tooltip" data-placement="top" data-container="#footer" data-offset="0,10" title="FB"><i class="fab fa-facebook" style="font-size: 30px; color: white;"></i></a></li>
+          <li class="mr-2"><a href="https://github.com/"data-toggle="tooltip" data-placement="top" data-container="#footer" data-offset="0,10" title="網頁設計課程介紹"><img src="images/wda.png" width="30"></a></li>
+          <li class="mr-2"><a href="https://google.com/"data-toggle="tooltip" data-placement="top" data-container="#footer" data-offset="0,10" title="台灣就業通"><img src="images/twjb.png" width="30"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- 回到頂端 -->
+  <div id="go_top_page">
+    <a href="#section01"><i class="fas fa-chevron-up"></i></a>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -970,7 +1005,20 @@
     $('.carousel-control-prev, .carousel-control-next, #btn-login, #btn-register,[data-toggle="pill"],[data-toggle="tab"]').on('click', function (event) {
       event.preventDefault();
       $('html,body').stop();
+    });
+
+    $('#coffee1').on('click',function(){
+      $('#nav-img').attr('src','images/section02_01.jpg');
     })
+    $('#coffee2').on('click',function(){
+      $('#nav-img').attr('src','images/section02_02.jpg');
+    })
+    $('#coffee3').on('click',function(){
+      $('#nav-img').attr('src','images/section02_03.jpg');
+    })
+
+    // 工具提示框
+    $('[data-toggle="tooltip"]').tooltip()
   </script>
 </body>
 
