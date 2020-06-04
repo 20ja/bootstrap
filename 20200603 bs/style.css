@@ -258,6 +258,81 @@ background-color: var(--coffee1);
 }
 
 
+/* section04 莊園位置----------------------- */
+
+#section04 .embed-responsive{
+  position: absolute;
+  filter: brightness(50%);
+  transition: 1s;
+}
+#section04 .embed-responsive:hover{
+  filter: brightness(80%);
+}
+
+/* 交通資訊 */
+#section04 .information{
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section04 .information h3{
+  color: var(--primary);
+  text-align: center;
+  background: var(--coffee5);
+  border-radius: 0.25rem;
+  padding: var(--s3);
+  box-shadow: var(--shadow1);
+
+  position: relative;
+}
+#section04 .information .accordion{
+  box-shadow: var(--shadow1);
+  position: relative;
+
+}
+
+/* 關閉按鈕 */
+#section04 .information_switch{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+}
+#section04 .information_switch .close{
+  font-size: 2rem;
+  color: var(--primary);
+  padding: 0.3rem 0.2rem 0.2rem;
+  cursor: pointer;
+}
+
+
+#ja{
+  transition: 1s;
+}
+
+/* 利用 :checked 狀態 讓隔壁元素去做動作 */
+#accordion:checked + #ja{
+  transform: translateX(98%);
+}
+
+/* 關閉左邊方向的箭頭 */
+.information_switch label .fa-angle-double-left{
+  display: none;
+}
+
+#accordion:checked + #ja .information_switch label .fa-angle-double-right{
+  display: none;
+}
+#accordion:checked + #ja .information_switch label .fa-angle-double-left{
+  display: block;
+}
+
+
 
 
 /* 裝置斷點控制區------------------------- */
@@ -287,6 +362,15 @@ background-color: var(--coffee1);
   /* 992 section03 */
   #section03 .text p{
     display: block !important; 
+  }
+
+  /* 992 section04 */
+  #section04 .information .accordion{
+    width: 40%;
+  }
+
+  #section04 .information{
+    align-items: flex-end;
   }
 
 }
