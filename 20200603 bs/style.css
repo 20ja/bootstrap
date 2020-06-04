@@ -278,6 +278,8 @@ background-color: var(--coffee1);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  overflow-x: hidden;
 }
 
 #section04 .information h3{
@@ -332,6 +334,91 @@ background-color: var(--coffee1);
   display: block;
 }
 
+/* section05 聯絡我們----------------------- */
+
+#section05{
+  color: var(--coffee2);
+  background: var(--coffee4);
+  padding: 2rem 0;
+}
+
+#section05 .container{
+  width: 95%;
+}
+
+#section05 h1{
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#section05 h5{
+  font-size: 1.45rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+#section05 small{
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+#section05 .row .col-12:first-child {
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 1px solid var(--coffee3);
+}
+
+#section05 .row .col-12:last-child {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 1px solid var(--coffee3);
+}
+
+#section05 input,
+#section05 textarea,
+#section05 select{
+  border: 1px solid var(--coffee3) !important;
+  transition: 1s;
+}
+#section05 input:focus,
+#section05 textarea:focus,
+#section05 select:focus{
+  box-shadow: var(--shadow2);
+  border: 1px solid var(--coffee3) !important;
+}
+
+/* section06 咖啡故事----------------------- */
+
+#section06{
+  padding: 2rem 0;
+}
+#section06 h1{
+  text-align: center;
+  padding-top: var(--s5);
+  padding-bottom: var(--s2);
+  color: var(--coffee5);
+}
+
+#section06 #nav-img{
+  box-shadow: var(--shadow3);
+}
+
+#section06 a{
+  color: var(--coffee5);
+}
+#section06 a:hover{
+  color: var(--coffee1);
+  background-color: var(--coffee5);
+}
+#section06 a:active{
+  color: var(--coffee1);
+}
+
+
+
 
 
 
@@ -371,6 +458,16 @@ background-color: var(--coffee1);
 
   #section04 .information{
     align-items: flex-end;
+  }
+  /* 992 section05 */
+  #section05 h5{
+  font-size: 1.6rem;
+  text-align: left;
+  }
+
+  #section05 small{
+    text-align: left;
+    font-size: 1rem;
   }
 
 }
