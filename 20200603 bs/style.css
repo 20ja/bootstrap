@@ -81,6 +81,8 @@ background-color: var(--coffee1);
   margin-right: var(--s1);
 }
 
+
+
 /* 575px 最小尺寸，登入、註冊會呈現水平顯示 */
 #login_menu{
   display: flex;
@@ -145,25 +147,115 @@ background-color: var(--coffee1);
   padding: var(--s4);
   color: var(--coffee1);
 }
+#section02 .container {
+ background: var(--coffee4);
+}
 #section02>.container>.row {
   padding: var(--s2);
+}
+
+#section02 .col-lg-3{
+  padding-left: var(--s2);
+  padding-right: var(--s2);
+  margin-bottom: var(--s3);
 }
 #section02 .list-group {
   font-size: 1rem;
   margin: 1rem 0;
 }
+#section02 .list-group-flush> .list-group-item:last-child {
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+}
 #section02 .list-group .nav-link {
   color: var(--coffee2);
   padding: 0.5rem;
 }
+#section02 .nav-item.active {
+  color: var(--coffee2);
+  background: var(--coffee4);
+  border: var(--s1) inset var(--coffee5);
+}
+
 #section02 .card {
   border: 5px double var(--coffee5) !important;
   transition: 0.3s;
+  box-shadow: 0 0 0 1px var(--coffee4);
+  height: 100%;
 }
 #section02 .card:hover {
   transform: translateY(-1rem);
 }
+#section02 .card-body {
+  padding: var(--s2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#section02 .card-body h5 {
+ margin: 0;
+ font-size: 1.1rem;
+}
+#section02 .card-body p {
+ margin: 0;
+}
 
+/* section03 周邊景點----------------------- */
+
+#section03{
+  padding-bottom: var(--s4) ;
+}
+#section03 h1{
+  text-align: center;
+  padding-top: var(--s5);
+  margin: var(--s3);
+  color: var(--coffee5);
+}
+
+#section03>.container>.row{
+  background: var(--black50);
+  padding: var(--s2);
+  padding-top: var(--s4);
+}
+
+#section03 .col-lg-3{
+  padding-left: var(--s2);
+  padding-right: var(--s2);
+  margin-bottom: var(--s3);
+}
+
+#section03 .view{
+  position: relative;
+  overflow: hidden;
+}
+
+#section03 .view .text{
+  color: white;
+  background-color: var(--black50);
+  padding: 0 var(--s3);
+  /* 文字組定位在圖片上層 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section03 .view .text p{
+  display: none;
+}
+#section03 .view img{
+  transition: 0.5s;
+}
+#section03 .view:hover img{
+  transform: scale(1.2);
+}
+#section03 .view:hover .text{
+  background-color: var(--black75);
+}
 
 
 
@@ -171,6 +263,17 @@ background-color: var(--coffee1);
 /* 裝置斷點控制區------------------------- */
 /* 575px以下 */
 @media (max-width: 575px){
+  #main_menu .navbar-nav{
+    padding-left: var(--s3);
+  }
+  #login_menu .navbar-nav{
+    padding-left: var(--s3);
+    padding-bottom: var(--s2);
+  }
+
+  #section01{
+    height: 330px;
+  }
 
 }
 /* lg 992PX以上 */
@@ -179,6 +282,11 @@ background-color: var(--coffee1);
   #section03,#section04,
   #section05,#section06 {
     height: 100vh;
+  }
+
+  /* 992 section03 */
+  #section03 .text p{
+    display: block !important; 
   }
 
 }
@@ -198,3 +306,4 @@ section:nth-child(odd){
   border-color: var(--coffee3);
   box-shadow: var(--shadow2);
 }
+
