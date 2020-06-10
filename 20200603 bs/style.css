@@ -476,9 +476,6 @@ background-color: var(--coffee1);
 
 }
 
-section:nth-child(odd){
-  background: var(--coffee4);
-}
 
 /* modal------------------------------- */
 #login .modal-content,
@@ -512,4 +509,29 @@ section:nth-child(odd){
   line-height: 50px;
   color: var(--coffee5);
   text-decoration: none;
+}
+
+/*  */
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #fff;
+}
+
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+
+  border-right-color: #fff;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+
+  border-bottom-color: #fff;
+}
+
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #fff;
+}
+
+.tooltip-inner {
+  color: black;
+  background-color: #fff;
 }
