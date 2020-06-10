@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/magnific-popup-Single.css">
   <!-- animate.css -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css'/>
+<!-- wow.js 需使用舊版animate.css -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'/>
 
   <title>泰山咖啡莊園-Coding的好地方</title>
@@ -28,15 +29,17 @@
   <!-- 導覽列區 -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="#section01">
+    <div class="menu-left">
       <img src="images/logo.png" alt="泰山咖啡園" width="40">
       <span class="ml-2 align-middle">泰山咖啡莊園</span>
     </a>
+  </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#coffee-navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-lg-end" id="coffee-navbar">
-      <ul id="main_menu" class="navbar-nav">
+      <ul id="main_menu" class="navbar-nav menu-left">
         <li class="nav-item">
           <a class="nav-link" href="#section02"><i class="fas fa-hamburger"></i>菜單餐點</a>
         </li>
@@ -55,7 +58,7 @@
       </ul>
 
 
-      <ul id="login_menu" class="navbar-nav">
+      <ul id="login_menu" class="navbar-nav menu-left">
         <li class="nav-item">
           <a id="btn-login" class="nav-link" href="#login" data-toggle="modal"><i class="fas fa-user"></i>登入</a>
         </li>
@@ -170,15 +173,25 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <div id="textillate">
+      <ul class="textillate_text">
+        <li>香濃原味，伴您悠閒享生活</li>
+        <li>輕鬆愉悅，重溫浪漫時光</li>
+        <li>與您相約，戀上幸福好味道</li>
+        <li>用對待人生的態度，對待一杯咖啡</li>
+        <li>簡單即是美，一杯一世界</li>
+      </ul>
+    </div>
   </section>
   <!-- section02 菜單 -->
   <section id="section02">
     <div class="container">
-      <h1>菜單餐點</h1>
+
+      <h1 class="wow bounceIn"data-wow-duration="2s" data-wow-iteration="2" data-wow-offset="300">菜單餐點</h1>
       <div class="row">
         <div class="col-12 col-lg-2">
           <!-- 列表清單（list group）+ 導覽（Navs） -->
-          <ul class="list-group list-group-flush flex-row justify-content-center flex-lg-column">
+          <ul class="list-group list-group-flush flex-row justify-content-center flex-lg-column menu-left">
             <li class="list-group-item p-0"><a class="nav-item nav-link" data-toggle="pill" href="#eat-01">咖啡飲品</a>
             </li>
             <li class="list-group-item p-0"><a class="nav-item nav-link" data-toggle="pill" href="#eat-02">特調飲品</a>
@@ -592,8 +605,18 @@
 
   <!-- section03 周邊景點 -->
   <section id="section03">
+    <!------------------- 視差-------------------- -->
+    <div id="scene1" class="position-absolute" style="z-index:-1;">
+      <div class="layer" data-depth="0.5">
+        <div class="bg1 bleed"></div>
+      </div>
+    </div>
+    <!-- particles.js 粒子效果 -->
+    <!-- pointer-events: none 讓上面的粒子可以穿透 點到下面的選項 -->
+    <div id="particles-js" class="position-absolute h-100 w-100" style="z-index: 1; pointer-events: none;"></div>
+
     <div class="container">
-      <h1>周邊景點</h1>
+      <h1 class="wow bounceIn"data-wow-duration="2s" data-wow-iteration="2" data-wow-offset="300">周邊景點</h1>
       <div class="row">
         <div class="col-6 col-lg-3">
           <a class="image-popup-no-margins" href="https://picsum.photos/1920/1080/?random=1">
@@ -816,7 +839,7 @@
   <section id="section05">
     <div class="container">
       <form>
-        <h1>聯絡我們</h1>
+        <h1 class="wow bounceIn"data-wow-duration="2s" data-wow-iteration="2" data-wow-offset="300">聯絡我們</h1>
         <div class="row">
           <div class="col-12">
             <h5>泰山咖啡莊園，傳承熱情 coding 精神</h5>
@@ -898,8 +921,14 @@
   </section>
   <!-- section06 咖啡故事 -->
   <section id="section06">
+    <!-- 視差 -->
+    <div id="scene2" class="position-absolute" style="z-index:-1;">
+      <div class="layer" data-depth="0.5">
+        <div class="bg2 bleed"></div>
+      </div>
+    </div>
     <div class="container">
-      <h1>咖啡故事</h1>
+      <h1 class="wow bounceIn"data-wow-duration="2s" data-wow-iteration="2" data-wow-offset="300">咖啡故事</h1>
       <div class="row">
         <div class="col-lg-6">
           <img id="nav-img" class="h-100 w-100" src="images/section02_01.jpg"
@@ -986,7 +1015,7 @@
     </div>
   </footer>
   <!-- 回到頂端 -->
-  <div id="go_top_page">
+  <div id="go_top_page" class="animated bounce" style="animation-duration: 3s;">
     <a href="#section01"><i class="fas fa-chevron-up"></i></a>
   </div>
 
@@ -1001,7 +1030,23 @@
   <!-- Magnific Popup -->
   <script src="../js/jquery.magnific-popup.min.js"></script>
   <script src="../js/magnific-popup-Single.js"></script>
+  <!-- particles.js 粒子效果 -->
+  <script src="../js/particles.min.js"></script>
+  <script src="../js/particles_app.js"></script>
+  <!-- wow.js -->
+  <script src="../js/wow.min.js"></script>
+  <!-- parallax 視差 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <!-- textillate.js -->
+  <script src="../js/jquery.fittext.js" ></script>
+  <script src="../js/jquery.lettering.js" ></script>
+  <script src="../js/jquery.textillate.js" ></script>
+  
   <script>
+    $('.navbar-toggler').on('click',function(){
+      $('#navbar').toggleClass('toggle_black');
+    })
+
     $('.carousel-control-prev, .carousel-control-next, #btn-login, #btn-register,[data-toggle="pill"],[data-toggle="tab"]').on('click', function (event) {
       event.preventDefault();
       $('html,body').stop();
@@ -1017,8 +1062,89 @@
       $('#nav-img').attr('src','images/section02_03.jpg');
     })
 
+    // 回到頂端top按鈕
+    $('#go_top_page').css({'display': 'none'});
+    $(window).on('scroll',function(){
+      nowloc = $(window).scrollTop();
+      if(nowloc>500){
+        $('#go_top_page').fadeIn(1000);
+        $('#go_top_page').css({'animation-iteration-count': 3});
+      }else{
+        $('#go_top_page').fadeOut(1000);
+        $('#go_top_page').css({'animation-iteration-count': 'none'});
+      }
+
+      if(nowloc<=300){
+        $('#navbar').css({
+          background: 'transparent'
+        });
+      }else{
+        $('#navbar').css({
+          background: 'var(--coffee1)'
+        })
+      }
+    })
+
     // 工具提示框
     $('[data-toggle="tooltip"]').tooltip()
+
+    // 視差
+    var scene1 = document.getElementById('scene1');
+    var parallaxInstance1 = new Parallax(scene1);
+    var scene2 = document.getElementById('scene2');
+    var parallaxInstance2 = new Parallax(scene2);
+
+    // wow.js
+    new WOW().init();
+
+
+    // textillate
+    $('#textillate').textillate({
+      // 被選擇到的子選擇器，在它裡面的多行文字會逐一播放動畫
+  selector: '.textillate_text',
+      // 重複播放
+  loop: true,
+      // 每段文字顯示的時間長度
+  minDisplayTime: 8000,
+      // 延遲多久開始執行動畫
+  initialDelay: 500,
+  autoStart: true,
+  inEffects: [],
+  outEffects: [ 'hinge' ],
+      // 進場動畫設定
+  in: {
+    // 動畫名稱
+    effect: 'zoomIn',
+    // 每個字元延遲的倍率
+    delayScale: 2,
+    // 每個字元延遲的時間
+    delay: 150,
+    // 同步出現
+    sync: false,
+    // 隨機字元出現
+    shuffle: true,
+    // 反轉出現
+    reverse: false,
+    // 回呼函式(通往另一個函式?)
+    callback: function () {}
+  },
+
+  // 離場動畫設定
+  out: {
+    effect: 'zoomOut',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: true,
+    reverse: false,
+    callback: function () {}
+  },
+
+  callback: function () {},
+  // 設定word 是一個單字
+  type: 'char'
+});
+
   </script>
 </body>
 
